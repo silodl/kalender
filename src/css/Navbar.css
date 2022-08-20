@@ -1,0 +1,214 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+
+.activeIcon {
+  box-shadow: #1c3258c2 0px 20px 15px 0px;
+  border-radius: 8px;
+}
+
+/* Sidebar */
+.sideBarOpenButton {
+  position: fixed;
+  left: 2.5vw;
+  top: 20px;
+}
+
+.sideBar {
+  z-index: 1;
+  width: 70vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #b4cae1;
+  border-radius: 0 10px 10px 0;
+  border-right: 2px solid #1c3258c2;
+}
+
+.sideBarCloseArea {
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: #f8f9fa41;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .sideBar {
+    width: 60vw;
+  }
+
+  .sideBarCloseArea {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sideBar {
+    width: 40vw;
+  }
+
+  .sideBarCloseArea {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .sideBar {
+    width: 35vw;
+  }
+
+  .sideBarCloseArea {
+    width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .sideBar {
+    width: 25vw;
+  }
+
+  .sideBarCloseArea {
+    width: 75vw;
+  }
+}
+
+.alignSideBarElement {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+.sideBarUser {
+  margin-bottom: 15px;
+}
+
+.sideBarItem {
+  text-decoration: none;
+  padding: 3px 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editCategoryIcon {
+  width: 18px;
+}
+
+.alignNameAndCheckBox {
+  display: flex;
+}
+
+.sideBarButton {
+  position: absolute;
+  bottom: 5vh;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a:visited {
+  color: black;
+}
+
+.sideBarCheckboxElement {
+  display: flex;
+  align-items: center
+}
+
+.sideBarCheckbox {
+height: 15px;
+width: 15px;
+display: inline-block;
+border: 1.5px solid;
+border-radius: 5px;
+margin-right: 5px;
+cursor: pointer;
+background-color: #f8f9faf1;
+}
+
+
+/* add new category */
+.newCategoryInput {
+  height: 20px;
+  font-size: 16px;
+  border: 1px solid #95B3D7;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+.newCategoryInput:focus {
+  outline: 1.5px solid #4F81BD;
+}
+
+.colorSelector {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colorOptions {
+  position: relative;
+  top: 20px;
+}
+
+.colorOption {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 1px
+}
+
+.newCategoryButton {
+  font-size: 16px;
+  padding: 5px 10px !important;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.alignNewCategoryButtons {
+  justify-content: space-around;
+}
+
+/* edit category */
+
+.editCategoryButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alignButtons {
+  margin-left: 8vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    margin-bottom: 25px;
+  }
+}
+
+.backgroundOptions {
+  display: flex;
+  width: 77%;
+  justify-content: space-evenly;
+}

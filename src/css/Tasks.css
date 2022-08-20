@@ -1,0 +1,181 @@
+.todoList {
+  width: 65vw;
+  margin: auto;
+  height: 73vh;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.todoListActive {
+  list-style-type: none;
+  max-height: 70%;
+  overflow-y: auto;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;;
+}
+
+.todoListFinished {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 30%;
+}
+
+.todoListIcon {
+  color: #95B3D7;
+  padding: 2px 5px 2px 3px;
+  cursor: pointer;
+}
+
+.todoListItem {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px auto;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  background-color: #f8f9fa81;
+}
+
+#todoInputBox {
+  width: 60vw;
+  border: 2px solid #1c3258;
+  border-radius: 10px;
+  padding: 5px 0;
+  padding-right: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8f9fa81;
+}
+
+#todoInputField {
+  background-color: transparent;
+  border-width: 0;
+  font-size: 18px;
+  width: 85%;
+  float: right;
+  margin-left: 2px;
+}
+
+#todoInputField:focus {
+  outline-width: 0;
+}
+
+.circleOutlineIcon {
+  /*color: #1c3258;*/
+  margin: 5px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #1c3258;
+  border-radius: 25%;
+}
+
+.circleFilledIcon {
+  background-color: #1c3258;
+  margin: 5px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #1c3258;
+  border-radius: 25%;
+  color: #95B3D7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hideFinishedTasks {
+  color: #1c3258;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: -15px;
+  width: fit-content;
+}
+
+.alignTask {
+  display: flex;
+  align-items: center
+}
+
+.taskEditInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #1c3258;
+  height: 25px;
+}
+
+input[type="text"].taskEditInput {
+  padding-left: 5px;
+  font-size: 16px;
+  width: 65%;
+}
+
+.taskEditInput:focus {
+  outline: 1px solid #1c3258;
+}
+
+.taskDueDate {
+  position: absolute;
+  right: 27vw;
+  font-size: 16px;
+}
+
+.editTaskIcon {
+  width: 20px;
+  position: absolute;
+  right: 20vw;
+}
+
+.alignButtons {
+  display: flex;
+}
+
+.alignButtons > span {
+  margin-right: 5px;
+}
+
+.deleteAlertBackground {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f9fa9a;
+}
+
+.deleteAlert {
+  z-index: 2;
+  background-color: #f8f9fa;
+  position: absolute;
+  width: 70vw;
+  left: calc(15vw - 10px);
+  top: 30vh;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #1c3258;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.alignDeleteAlertButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .taskEditInput::-webkit-calendar-picker-indicator{
+    display: none;
+  }
+}

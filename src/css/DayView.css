@@ -1,0 +1,70 @@
+.dayView {
+  width: 75vw;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  overflow-x: hidden;
+  margin-top: 20px;
+  background-color: #f8f9fa81;
+  border-radius: 25px;
+  padding: 8px 5px;
+}
+
+.clock_row {
+  border-style: solid;
+  border-color: #95B3D7;
+  border-width: 0 0 1px 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.clockLabel {
+  margin-left: 5px;
+}
+
+.dayViewTask {
+  margin: auto;
+  width: 95vw;
+  text-align: center;
+  height: 42vh;
+}
+
+.noTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  justify-content: space-between;
+}
+
+.title {
+  padding-top: 10px;
+  color: #1c3258;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.eventWrapper {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.dayEvent {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 10px;
+  width: 40vw;
+  left: 20vw;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.biggerDayView {
+  height: 60vh;
+}

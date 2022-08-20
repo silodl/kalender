@@ -1,0 +1,142 @@
+.week {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: calc(90vh - 70px);
+    margin: auto;
+    margin-top: 15px;
+    overflow-y: clip;
+}
+
+.weekTitle {
+    font-size: 25px;
+}
+
+.dayInWeek {
+    width: calc((100% - 8%)/4);
+    height: 95%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    text-align: center;
+
+    background-color: #f8f9fa81;
+    border-radius: 20px;
+}
+
+.dayInWeek > div {
+    color:black;
+}
+
+.dayInWeek > div {
+    padding: 5%;
+}
+
+.dayInWeek.today {
+    outline: 2px solid #1c3258;
+}
+
+.weekEvent {
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 3px;
+    width: 90%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.eventTime {
+    font-size: 15px;
+}
+
+.week > #box4 {
+    justify-content: flex-start;
+    height: 43%;
+}
+
+.weekLine2 > div  {
+    width: calc((100% - 6%) / 3);
+}
+
+.weekLine2 > .weekDayItem  {
+    width: calc(100% / 3) !important;
+}
+
+
+.week > #box2 {
+    justify-content: flex-start;
+}
+
+#box2 > .weekDayItem {
+    width: calc(100%/4);
+}
+
+#weekImage {
+    width: 270px;
+    max-width: 60%;
+    right: 0;
+    bottom: 72px;
+    position: fixed;
+}
+
+/* event info */
+
+.eventInfoBackground {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left:0;
+    top:0;
+    padding: 0 !important;
+    background-color: rgba(234,230,227,0.6);
+    z-index: 1;
+}
+
+.eventInfo {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin: 5% 5%;
+    padding: 5% 5%;
+    box-shadow: inset 0 0 0 1000px #f8f9fa93;
+    border-radius: 10px;
+    line-height: 2em;
+    text-align: left
+}
+
+.eventInfoFrame {
+    position: fixed;
+    height: 85vw;
+    width: 85vw;
+    background-image: url("../Images/Bg high.svg");
+    left: 7.5vw;
+    top: 45vh;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+#nameAndColor {
+    display: flex;
+    align-items: baseline
+}
+
+.eventDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#eventName {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+#editButton {
+    color: #1c3258;
+    position: fixed;
+    left: 60vw;
+    top: 10%;
+    cursor: pointer;
+}

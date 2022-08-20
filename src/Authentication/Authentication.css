@@ -1,0 +1,36 @@
+.authTitle {
+    padding-top: 50px;
+    color: #f8f9fa;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 7px #1c3258;
+  }
+
+.form {
+    margin: auto;
+    width: fit-content;
+    margin-top: 30px;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authField {
+    background-color: #f8f9fa !important;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 2px 2px #4F81BD;
+}
+
+.alignAuthButtons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.errorMessage{
+    top: 24vh;
+    color: #8c1717;
+    text-align: center;
+}

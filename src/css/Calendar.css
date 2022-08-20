@@ -1,0 +1,135 @@
+.dayInMonth .today {
+  border-radius: 50%;
+  background-color: #f8f9faa1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px; 
+}
+
+.alignCalendar {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.weekNumber {
+  color: #1c3258;
+  margin-top: 75%;
+}
+
+.dayEventCalendar {
+  width: 89%;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  height: 1.2em;
+  border-radius: 3px;
+}
+
+.daysEventCalendar {
+  overflow-x: visible;
+  margin-bottom: 1px;
+  border-style: solid;
+  text-align: center;
+  position: relative;
+}
+
+#box1 {
+  width: 100%;
+  height: 22px;
+}
+
+#box2 {
+  height: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 600;
+  color: #1c3258;
+  align-items: center;
+}
+
+#box3 {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 22px);
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+#box4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 2px);
+  justify-content: space-between;
+  height: calc(100% - 23px);
+  margin-left:1px;
+}
+
+.calendar {
+  width: 90vw;
+  height: calc(90vh - 70px - 70px);
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  overflow-y: clip;
+  background-color: #f8f9fa81;
+  border-radius: 25px;
+  padding: 20px 0;
+}
+
+#col1 {
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  height: 100%;
+  font-weight: bold;
+}
+
+#col2 {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 100%;
+}
+
+.eventDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.dayInMonth > div > .alignEvents {
+  display: flex;
+  justify-content: space-around
+}
+
+/* one day in month view */
+.dayInMonth {
+  width: calc(99%/7);
+  height: calc(90%/6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: calc(100%/14);
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+/* days in last/ next month */
+.notInMonth {
+  color: grey;
+}
+
+.row {
+  display: flex;
+  align-items: center
+}
